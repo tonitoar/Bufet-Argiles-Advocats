@@ -1,7 +1,7 @@
 # Bufet Argilés Bertran - Professional Law Firm Website
 
 ### Project Overview
-The Bufet Argilés Bertran website is a custom-developed project aimed at establishing a professional online presence for the law firm, Bufet Argilés Bertran. The site enables clients to explore services, learn about the founder, and easily access contact details. It is designed with a focus on clean aesthetics, accessibility, and a responsive layout for seamless navigation across devices.
+The Bufet Argilés Bertran website is a custom-developed project aimed at establishing a professional online presence for the spanish law firm, Bufet Argilés Bertran. The site enables clients to explore services, learn about the founder, and easily access contact details. It is designed with a focus on clean aesthetics, accessibility, and a responsive layout for seamless navigation across devices.
 
 ### Table of Contents
 1. [Project Description](#project-description)
@@ -57,6 +57,7 @@ Developed by Toni Torredemer Argilés, a freelance developer specializing in cus
 
 **Bufet Argilés Bertran**:
 - **Phone**: 93 786 17 46
+- **Website**: https://www.bufetargiles.com
 - **Email**: cargiles@bufetargiles.com
 - **Office in Terrassa**: Passeig de les Lletres, 13, 2n - 4ª, 08211 Terrassa, Spain
 - **Office in Barcelona**: Carrer de Aribau, 168 - 170, 1r - 1ª, 08306 Barcelona, Spain
