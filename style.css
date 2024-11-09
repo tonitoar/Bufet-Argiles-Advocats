@@ -1,0 +1,2915 @@
+* {
+     border: 1px solid red; 
+    margin:0;
+    padding:0;
+}
+
+  
+
+body {
+    background-color:white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    position: fixed;
+    z-index: 1;
+    border: 1.7px solid rgb(12, 53, 18);
+}
+
+
+nav {
+    color: white;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+
+nav a:visited,
+nav a:link,
+nav a:active  {
+    color: white;
+}
+
+nav li {
+    width: 92px;
+    padding: 5px 1px;
+    cursor: pointer;
+    background-color: rgb(12, 53, 18);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 1px;
+}
+
+nav li:hover {
+    background-color: rgb(6, 28, 10);
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1,
+.hero-content h2 {
+    color: white;
+}
+
+
+
+.hero-content h1 {
+    padding: 5px 20px;
+}
+
+.hero-content h2 {
+    padding: 5px 10px;
+    margin: 5px 0px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 53, 18);
+    border-radius: 25px;
+    color: white;
+    border: 2.5px solid rgb(6, 28, 10);
+    margin: 25px 0px 10px 0px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-button:hover {
+    transform: scale(1.07);
+}
+
+.hero-button a {
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-button :visited,
+.hero-button :link,
+.hero-button :active {
+    color: white;
+}
+
+#servicios {
+    display: flex;
+    justify-content: center;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios-titulo h2 {
+    text-align: center;
+    font-weight: 700;
+    color:rgb(12, 53, 18)
+}
+
+.servicios-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicios-info {
+    display: grid;
+    grid-template-areas:
+    "derecho-civil derecho-penal"
+    "derecho-admin asesor";
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.derecho-civil {
+    grid-area: derecho-civil;
+    display: grid;
+    grid-template-areas: "titulo1"
+                         "contenido1";
+    grid-template-columns: 1fr;
+    border: 3px solid rgb(12, 53, 18);
+    box-shadow: 10px 10px 5px gray;
+    color: rgb(12, 53, 18);
+}
+
+.derecho-civil h3 {
+    text-align: center;
+    grid-area: titulo1;
+    margin: 40px 5px 0px 5px;
+    align-self: center;
+    padding: 10px;
+}
+
+.derecho-civil p {
+    text-align: left;
+    grid-area: contenido1;
+    margin: 5px;
+    align-self: center;
+    padding: 10px;
+}
+
+.derecho-penal {
+    grid-area: derecho-penal;
+    display: grid;
+    grid-template-areas: "titulo2"
+                         "contenido2";
+    grid-template-columns: 1fr;
+    border: 3px solid rgb(12, 53, 18);
+    box-shadow: 10px 10px 5px gray;
+    color: rgb(12, 53, 18);
+}
+
+.derecho-penal h3 {
+    grid-area: titulo2;
+    text-align: center;
+    display: grid;
+    align-items: end;
+    margin: 40px 5px 0px 5px;
+    align-self: center;
+    padding: 10px;
+}
+
+.derecho-penal p {
+    grid-area: contenido2;
+    text-align:left;
+    margin: 5px;
+    align-self: center;
+    padding: 10px;
+}
+
+
+.derecho-admin {
+    grid-area: derecho-admin;
+    display: grid;
+    grid-template-areas: "titulo3"
+    "contenido3";
+    grid-template-columns: 1fr;
+    border: 3px solid rgb(12, 53, 18);
+    box-shadow: 10px 10px 5px gray;
+    color: rgb(12, 53, 18);
+}
+
+
+.derecho-admin h3 {
+    grid-area: titulo3;
+    text-align: center;
+    margin: 40px 5px 0px 5px;
+    align-self: center;
+    padding: 10px;
+}
+
+.derecho-admin p {
+    grid-area: contenido3;
+    text-align:left;
+    margin: 5px 5px 5px 5px;
+    align-self: center;
+    padding: 10px;
+}
+
+.asesor {
+    grid-area: asesor;
+    display: grid;
+    grid-template-areas: "titulo3"
+                         "contenido3";
+    grid-template-columns: 1fr;
+    border: 3px solid rgb(12, 53, 18);
+    box-shadow: 10px 10px 5px gray;
+    color: rgb(12, 53, 18);
+}
+
+.asesor h3 {
+    grid-area: titulo3;
+    text-align: center;
+    margin: 40px 5px 0px 5px;
+    align-self: center;
+    padding: 10px 7px ;
+}
+
+.asesor p {
+    grid-area: contenido3;
+    text-align:left;
+    margin: 5px 5px 5px 5px;
+    align-self: center;
+    padding: 10px;
+}
+
+#biografia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(
+      0% 0%, 3.33% 4%, 6.67% 0%, 10% 4%, 13.33% 0%, 16.67% 4%, 20% 0%, 23.33% 4%, 26.67% 0%, 30% 4%, 33.33% 0%, 36.67% 4%, 40% 0%, 43.33% 4%, 46.67% 0%, 50% 4%, 53.33% 0%, 56.67% 4%, 60% 0%, 63.33% 4%, 66.67% 0%, 70% 4%, 73.33% 0%, 76.67% 4%, 80% 0%, 83.33% 4%, 86.67% 0%, 90% 4%, 93.33% 0%, 96.67% 4%, 100% 0%,
+      100% 100%, 96.67% 96%, 93.33% 100%, 90% 96%, 86.67% 100%, 83.33% 96%, 80% 100%, 76.67% 96%, 73.33% 100%, 70% 96%, 66.67% 100%, 63.33% 96%, 60% 100%, 56.67% 96%, 53.33% 100%, 50% 96%, 46.67% 100%, 43.33% 96%, 40% 100%, 36.67% 96%, 33.33% 100%, 30% 96%, 26.67% 100%, 23.33% 96%, 20% 100%, 16.67% 96%, 13.33% 100%, 10% 96%, 6.67% 100%, 3.33% 96%, 0% 100%
+  );
+  background-color: rgb(12, 53, 18);
+  padding-bottom: 20px;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.estudis {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 4px solid rgb(1, 35, 6);
+  border-radius: 12px;
+  background-color: rgb(1, 35, 6);
+  padding-bottom: 20px;
+}
+
+.estudis h3,
+.estudis h4 {
+  text-align: center;
+  color: white;
+}
+
+.estudis h3 {
+  text-transform: uppercase;
+  padding: 30px 20px 20px;
+}
+
+.estudis h4{
+  text-align: center;
+  font-style: italic;
+  padding: 10px 20px;
+}
+
+.estudis p {
+  text-align:justify;
+  line-height: 1.5;
+  padding: 10px 20px;
+  color: white;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 70px;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),url(images/image4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px 10px;
+    border-radius: 2.5px;
+}
+
+.contacto-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.dir-Terr {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dir-BCN {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dir1,
+.dir2 {
+    text-align: center;
+    padding: 5px;
+    color: rgb(12, 53, 18);
+    font-weight: 549;
+}
+
+.icon-building {
+    border-radius: 50%;
+    padding: 6px;
+    border: 1px solid rgb(12, 53, 18);
+    background-color: rgb(12, 53, 18);
+}
+
+.contacte-tec {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.telef {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telef p {
+    padding: 5px;
+    color: rgb(12, 53, 18);
+    font-weight: 549;
+}
+
+.email {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email p {
+    padding: 5px;
+    color: rgb(12, 53, 18);
+    font-weight: 549;
+}
+
+.icon-telf {
+    border: 1px solid rgb(12, 53, 18);
+    background-color: rgb(12, 53, 18);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.icon-email {
+    border: 1px solid rgb(12, 53, 18);
+    background-color: rgb(12, 53, 18);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+footer {
+    background-color:rgb(12, 53, 18);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-left {
+    width: 50%;
+    height: 260px;
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-address a,
+.footer-address p {
+    padding: 5px 0px 5px 5px;
+}
+
+.footer-address a {
+    cursor: pointer;
+}
+
+.address1 {
+    width: 225px;
+}
+
+.address2 {
+    width: 228px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:visited,
+footer a:link,
+footer a:active  {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1px;
+    text-underline-offset: 1.5px;
+}
+
+ .footer-righ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.copyright {
+    margin-top: 30px;
+}
+
+.linkedin-circle {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.linkedin-circle svg {
+    fill: white;
+}
+
+.linkedin-circle:hover{
+    background-color: white;
+
+}
+
+.linkedin-circle:hover svg{
+    fill: rgb(12, 53, 18);
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    header {
+        width: 100%;
+       max-width: 320px;
+    }
+
+    .header {
+        width: 100%;
+       max-width: 320px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 28px;
+    }
+
+    header img {
+        height: 28px;
+        width: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        height: 375px;
+        width: 100%;
+       max-width: 320px;
+     }
+
+     .hero-content {
+        position: relative;
+        top: 10px;
+    }
+
+    .hero-title {
+        display: none;
+    }
+
+    .hero-title-ipad {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 13vw;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 5.5vw;
+    }
+
+    .hero-button {
+      display: none;
+    }
+
+    #servicios {
+        width: 100%;
+       max-width: 320px;
+        height: 1550px;
+    }
+
+    .servicios {
+        height: 1420px;
+        width: 95%;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 25px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 1370px;
+    }
+
+    .servicios-info {
+        display: grid;
+        width: 95%;
+        height: 1350px;
+        grid-template-areas:
+        "derecho-civil"
+        "derecho-penal"
+        "derecho-admin"
+        "asesor";
+        margin: 0;
+    }
+
+    .servicios-content img {
+        display: none;
+    }
+
+    .derecho-civil,
+    .derecho-penal,
+    .derecho-admin,
+    .asesor {
+        width: 85%;
+        grid-template-rows: auto;
+        height: auto;
+        justify-self: center;
+    }
+
+    .derecho-civil h3,
+    .derecho-penal h3,
+    .derecho-admin h3,
+    .asesor h3 {
+        margin: 10px 5px 0px 5px;
+        font-size: 19px;
+    }
+
+    .derecho-civil p,
+    .derecho-penal p,
+    .derecho-admin p,
+    .asesor p {
+        margin: 5px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #biografia {
+        width: 100%;
+        max-width: 320px;
+        /* height: 1750px; */
+        height: auto;
+        clip-path: none;
+        padding: 100px 0px;
+    }
+
+    .bio {
+        /* height: 1600px; */
+        height: auto;
+        gap: 70px; 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  .bio img {
+    width: auto;
+    height: 105vw;
+  }
+
+  .estudis {
+    width: 85%;
+    height: auto;
+    /* margin-top: 30px; */
+  }
+
+  .estudis h3 {
+      font-size: 19px;
+      
+  }
+
+  .estudis h4 {
+    font-size: 17px;
+}
+
+  .estudis p {
+      font-size: 14px;
+  }
+
+  #contacto {
+        width: 100%;
+        max-width: 320px;
+        height: 500px;
+    }
+
+    .contacto {
+        width: 90%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contacto-info {
+        width: 100%;
+        height: 140px;
+        margin-top: 10px;
+    }
+
+    .dir-Terr,
+    .dir-BCN {
+        width: 100%;
+    }
+
+    .dir1,
+    .dir2 {
+        width: 80%;
+        font-size: 90%;
+    }
+
+    .icon-building {
+        width: 20px;
+        height: auto;
+        position: relative;
+        bottom: 1.5px;
+    }
+
+    .contacte-tec {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .telef,
+    .email{
+        width: 90%;
+    }
+
+    .telef p,
+    .email p {
+        position: relative;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .icon-telf,
+    .icon-email {
+        width: 20px;
+        height: auto;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 320px;
+        height: 350px;
+    }
+
+    .footer-content {
+        width: 95%;
+        height: 300px;
+    }
+
+    .footer-left {
+        width: 70%;
+        height: 260px;
+    }
+
+    .footer-address {
+        height: 260px;
+        width: 100%;
+    }
+
+    .footer-address a,
+    .footer-address p {
+        font-size: 12px;
+    }
+
+    .address1 {
+        width: 90%;
+    }
+
+    .address2 {
+        width: 95%;
+    }
+
+    .footer-righ {
+        width: 20%;
+        height: 260px;
+    }
+
+
+    .copyright {
+        margin-top: 30px;
+    }
+
+    .linkedin-circle {
+        width: 32px;
+        height: 32px;
+    }
+    .linkedin-symbol {
+        width: 15px;
+        height: auto;
+    }
+
+
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 376px) {
+   
+    header {
+        width: 100%;
+       max-width: 375px;
+    }
+
+    .header {
+        width: 100%;
+       max-width: 375px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    header img {
+        height: 32px;
+        width: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        height: 375px;
+        width: 100%;
+       max-width: 375px;
+     }
+
+     .hero-content {
+        position: relative;
+        top: 10px;
+    }
+
+    .hero-title {
+        display: none;
+    }
+
+    .hero-title-ipad {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.5rem, 12vw, 8.5rem);
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: clamp(1.2rem, 2vw, 4rem);
+    }
+
+    .hero-button {
+      display: none;
+    }
+
+    #servicios {
+        width: 100%;
+       max-width: 375px;
+        height: 1250px;
+    }
+
+    .servicios {
+        height: 1125px;
+        width: 95%;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 27px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 1050px;
+    }
+
+    .servicios-info {
+        display: grid;
+        width: 95%;
+        height: 1000px;
+        grid-template-areas:
+        "derecho-civil"
+        "derecho-penal"
+        "derecho-admin"
+        "asesor";
+        margin: 0;
+    }
+
+    .servicios-content img {
+        display: none;
+    }
+
+    .derecho-civil,
+    .derecho-penal,
+    .derecho-admin,
+    .asesor {
+        width: 90%;
+        grid-template-rows: auto;
+        height: auto;
+        justify-self: center;
+    }
+
+    .derecho-civil h3,
+    .derecho-penal h3,
+    .derecho-admin h3,
+    .asesor h3 {
+        margin: 10px 5px 0px 5px;
+        font-size: 19px;
+    }
+
+    .derecho-civil p,
+    .derecho-penal p,
+    .derecho-admin p,
+    .asesor p {
+        margin: 5px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+
+    #biografia {
+        width: 100%;
+        max-width: 375px;
+        /* height: 1550px; */
+        height: auto;
+        clip-path: none;
+        padding: 100px 0px;
+    }
+
+    .bio {
+        /* height: 1400px; */
+        height: auto;
+        gap: 70px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  .bio img {
+    width: auto;
+    height: 100vw;
+  }
+
+  .estudis {
+    width: 85%;
+    height: auto;
+  }
+
+  .estudis h3 {
+      font-size: 19px;
+  }
+
+  .estudis h4 {
+    font-size: 17px;
+}
+
+  .estudis p {
+      font-size: 14px;
+  }
+
+  #contacto {
+        width: 100%;
+        max-width: 375px;
+        height: 600px;
+    }
+
+    .contacto {
+        width: 85%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contacto-info {
+        width: 270px;
+        height: 140px;
+        margin-top: 10px;
+    }
+
+    .dir-Terr,
+    .dir-BCN {
+        width: 100%;
+    }
+
+    .dir1,
+    .dir2 {
+        width: 80%;
+        font-size: 90%;
+    }
+
+    .icon-building {
+        width: 20px;
+        height: auto;
+        position: relative;
+        bottom: 1.5px;
+    }
+
+    .contacte-tec {
+        width: 270px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .telef,
+    .email {
+        width: 100%;
+    }
+
+    .telef p,
+    .email p {
+        font-size: 14px;
+    }
+
+    .icon-telf,
+    .icon-email {
+        width: 20px;
+        height: auto;
+        position: relative;
+        right: 10px;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 375px;
+        height: 350px;
+    }
+
+    .footer-content {
+        width: 92.5%;
+        height: 300px;
+    }
+
+    .footer-left {
+        width: 70%;
+        height: 260px;
+    }
+
+    .footer-address {
+        height: 260px;
+        width: 100%;
+    }
+
+    .footer-address a,
+    .footer-address p {
+        font-size: 12px;
+    }
+
+    .address1 {
+        width: 90%;
+    }
+
+    .address2 {
+        width: 95%;
+    }
+
+    .footer-righ {
+        width: 30%;
+        height: 260px;
+    }
+
+
+    .copyright {
+        margin-top: 30px;
+    }
+
+    .linkedin-circle {
+        width: 32px;
+        height: 32px;
+    }
+    .linkedin-symbol {
+        width: 15px;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+
+    header {
+        width: 100%;
+       max-width: 425px;
+    }
+
+    .header {
+        width: 100%;
+       max-width: 425px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    header img {
+        height: 35px;
+        width: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        height: 375px;
+        width: 100%;
+       max-width: 425px;
+     }
+
+     .hero-content {
+        position: relative;
+        top: 10px;
+    }
+
+    .hero-title {
+        display: none;
+    }
+
+    .hero-title-ipad {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3rem, 11vw, 8.5rem);
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: clamp(1.2rem, 3vw, 4rem);
+    }
+
+    .hero-button {
+      display: none;
+    }
+
+    #servicios {
+        width: 100%;
+       max-width: 425px;
+        height: 1350px;
+    }
+
+    .servicios {
+        height: 1200px;
+        width: 95%;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 27px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 1150px;
+    }
+
+    .servicios-info {
+        display: grid;
+        width: 90%;
+        height: 1100px;
+        grid-template-areas:
+        "derecho-civil"
+        "derecho-penal"
+        "derecho-admin"
+        "asesor";
+        margin: 0;
+    }
+
+    .servicios-content img {
+        display: none;
+    }
+
+    .derecho-civil,
+    .derecho-penal,
+    .derecho-admin,
+    .asesor {
+        width: 85%;
+        grid-template-rows: auto;
+        height: auto;
+        justify-self: center;
+    }
+
+   .derecho-civil h3,
+    .derecho-penal h3,
+    .derecho-admin h3,
+    .asesor h3 {
+        margin: 10px 5px 0px 5px;
+        font-size: 19px;
+    }
+
+    .derecho-civil p,
+    .derecho-penal p,
+    .derecho-admin p,
+    .asesor p {
+        margin: 5px;
+        font-size: 14px;
+        text-align: left;
+    } 
+    
+    #biografia {
+        width: 100%;
+        max-width: 425px;
+        /* height: 1500px; */
+        height: auto;
+        clip-path: none;
+        padding: 100px 0px;
+    }
+
+    .bio {
+        /* height: 1300px; */
+        height: auto;
+        width: 90%;
+        gap: 70px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  .bio img {
+        width: 75vw;
+        min-width: 285px;
+        height: auto;
+  }
+
+  .estudis {
+    width: 85%;
+    height: auto;
+  }
+
+  .estudis h3 {
+      font-size: 19px;
+  }
+
+  .estudis h4 {
+    font-size: 17px;
+}
+
+  .estudis p {
+      font-size: 14px;
+  }
+
+  #contacto {
+        width: 100%;
+        max-width: 425px;
+        height: 600px;
+    }
+
+    .contacto {
+        width: 75%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contacto-info {
+        width: 270px;
+        height: 140px;
+        margin-top: 10px;
+    }
+
+    .dir-Terr,
+    .dir-BCN {
+        width: 100%;
+    }
+
+    .dir1,
+    .dir2 {
+        width: 80%;
+        font-size: 90%;
+    }
+
+    .icon-building {
+        width: 20px;
+        height: auto;
+        position: relative;
+        bottom: 1.5px;
+    }
+
+    .contacte-tec {
+        width: 270px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .telef,
+    .email {
+        width: 100%;
+    }
+
+    .telef p,
+    .email p {
+        font-size: 14px;
+    }
+
+    .icon-telf,
+    .icon-email {
+        width: 20px;
+        height: auto;
+        position: relative;
+        right: 10px;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 425px;
+        height: 350px;
+    }
+
+    .footer-content {
+        width: 95%;
+        height: 300px;
+    }
+
+    .footer-left {
+        width: 60%;
+        height: 260px;
+    }
+
+    .footer-address {
+        height: 260px;
+        width: 99%;
+    }
+
+    .footer-address a,
+    .footer-address p {
+        font-size: 12px;
+    }
+
+    .footer-address a {
+        padding: 5px 0px;
+    }
+
+    .address1,
+    .address2 {
+        width: 100%;
+    }
+
+    /* .address2 {
+        width: 95%;
+    } */
+
+    .footer-righ {
+        width: 40%;
+        height: 260px;
+    }
+
+
+    .copyright {
+        margin-top: 30px;
+    }
+
+    .linkedin-circle {
+        width: 35px;
+        height: 35px;
+    }
+    .linkedin-symbol {
+        width: 16px;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+
+    header {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .header {
+        width: 100%;
+        max-width: 768px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    header img {
+        height: 50px;
+        width: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        height: 505px;
+        width: 100%;
+        max-width: 768px;
+     }
+
+     .hero-content {
+        position: relative;
+        top: 40px;
+    }
+
+    .hero-title-mobile {
+        display: none;
+    }
+
+    .hero-title {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 8.6vw;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 4.5vw;
+    }
+
+    .hero-button {
+      display: none;
+    }
+
+    @media screen and (max-width: 535px) {
+
+        .header {
+            width: 100%;
+            max-width: 768px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .logo {
+            height: 40px;
+        }
+    
+        header img {
+            height: 40px;
+            width: auto;
+        }
+    
+
+        .hero-title {
+            display: none;
+        }
+    
+        .hero-title-ipad{
+            display: none;
+        }
+
+        .hero-title-mobile {
+            display: inline;
+        }
+
+        .hero-content {
+            position: relative;
+            top: 10px;
+        }
+
+        .hero-content h1 {
+            font-size: 13vw;
+            text-align: center;
+        }
+    
+        .hero-content h2 {
+            font-size: 5vw;
+        }
+    }
+
+    #servicios {
+        width: 100%;
+        max-width: 768px;
+        height: 950px;
+    }
+
+    .servicios {
+        height: 800px;
+        width: 95%;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 32px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 700px;
+    }
+
+    .servicios-info {
+        display: grid;
+        width: 95%;
+        height: 650px;
+        margin: 0px;
+    }
+
+    .servicios-content img {
+        display: none;
+    }
+
+    .derecho-civil {
+        width: 300px;
+        height: 250px;
+        grid-template-rows: 40px 225px;
+    }
+    
+    .derecho-civil h3 {
+        font-size: 20px;
+    }
+    
+    .derecho-civil p {
+        font-size: 15px;
+    }
+    
+    .derecho-penal {
+        width: 300px;
+        height: 250px;
+        grid-template-rows: 40px 210px;
+    }
+    
+    .derecho-penal h3 {
+        font-size: 20px;
+    }
+    
+    .derecho-penal p {
+        font-size: 15px;
+    }
+    
+    
+    .derecho-admin {
+        width: 300px;
+        height: 250px;
+        grid-template-rows: 40px 225px;
+    }
+    
+    
+    .derecho-admin h3 {
+        font-size: 20px;
+    }
+    
+    .derecho-admin p {
+        font-size: 15px;
+    }
+    
+    .asesor {
+        width: 300px;
+        height: 250px;
+        grid-template-rows: 40px 195px;
+    }
+    
+    .asesor h3 {
+        font-size: 20px;
+    }
+    
+    .asesor p {
+        font-size: 15px;
+    }
+
+
+@media screen and (max-width: 725px) {
+
+    #servicios {
+        width: 100%;
+        max-width: 768px;
+         height: 1350px;
+    }
+
+    .servicios {
+        height: 1250px;
+        width: 95%;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 30px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 1200px;
+    }
+
+    .servicios-info {
+        display: grid;
+        width: 90%;
+        height: 1150px;
+        grid-template-areas:
+        "derecho-civil"
+        "derecho-penal"
+        "derecho-admin"
+        "asesor";
+        margin: 0px;
+    }
+
+    .derecho-civil,
+    .derecho-penal,
+    .derecho-admin,
+    .asesor {
+        grid-template-rows: auto;
+        height: auto;
+    }
+     
+    .derecho-civil h3,
+    .derecho-penal h3,
+    .derecho-admin h3,
+    .asesor h3 {
+        margin: 10px 5px 0px 5px;
+        font-size: 20px;
+    }
+
+    .derecho-civil p,
+    .derecho-penal p,
+    .derecho-admin p,
+    .asesor p {
+        margin: 5px;
+        font-size: 15px;
+        text-align: left;
+    } 
+    
+/* .derecho-civil p,
+.derecho-penal p,
+.derecho-admin p,
+.asesor p {
+    text-align: center;
+} */
+
+    .servicios-content img {
+        display: none;
+    }
+
+}
+
+    #biografia {
+        width: 100%;
+        max-width: 768px;
+        height: 1600px;
+        clip-path: none;
+    }
+
+    .bio {
+        height: 1400px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  .bio img {
+        width: 70vw;
+        min-width: 300px;
+        height: auto;
+  }
+
+  .estudis {
+    width: 85%;
+    height: auto;
+  }
+
+  .estudis h3 {
+      font-size: 20px;
+  }
+
+  .estudis h4 {
+    font-size: 18px;
+}
+
+  .estudis p {
+      font-size: 15px;
+  }
+
+  #contacto {
+        width: 100%;
+        max-width: 768px;
+        height: 600px;
+    }
+
+    .contacto {
+        width: 70%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-info {
+        width: 300px;
+        height: 140px;
+        margin-top: 10px;
+    }
+
+    .dir-Terr,
+    .dir-BCN {
+        width: 100%;
+    }
+
+    .dir1,
+    .dir2 {
+        width: 75%;
+        font-size: 15px;
+    }
+
+    .icon-building {
+        width: 22px;
+        height: auto;
+        position: relative;
+        bottom: 1.5px;
+    }
+
+    .contacte-tec {
+        width: 300px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .telef,
+    .email {
+        width: 100%;
+    }
+
+    .telef p,
+    .email p {
+        font-size: 15px;
+    }
+
+    .icon-telf,
+    .icon-email {
+        width: 22px;
+        height: auto;
+        position: relative;
+        right: 10px;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 768px;
+        height: 350px;
+    }
+
+    .footer-content {
+        width: 90%;
+        height: 300px;
+    }
+
+    .footer-left {
+        width: 60%;
+        height: 260px;
+    }
+
+    .footer-address {
+        height: 260px;
+        width: 100%;
+    }
+
+    .footer-address a,
+    .footer-address p {
+        font-size: 12px;
+    }
+
+    .address1 {
+        width: 90%;
+    }
+
+    .address2 {
+        width: 95%;
+    }
+
+    .footer-righ {
+        width: 40%;
+        height: 260px;
+    }
+
+
+    .copyright {
+        margin-top: 30px;
+    }
+
+    .linkedin-circle {
+        width: 35px;
+        height: 35px;
+    }
+    .linkedin-symbol  {
+        width: 16px;
+        height: auto;
+    }
+
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    header {
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .header {
+        width: 100%;
+        max-width: 1024px;
+        height: 70px;
+    }
+
+    .logo {
+        height: 58px;
+        margin-left: 42px;
+    }
+
+    header img {
+        height: 58px;
+        width: auto;
+    }
+
+    nav {
+        width: 50%;
+        max-width: 380px;  
+        height: 42px;
+        margin-right: 40px;
+    }
+
+    nav ul {
+        height: 42px;
+    }
+
+    nav a {
+        height: 23px;
+        width: 82px;
+    }
+
+    nav li {
+        height: 23px;
+        width: 82px;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 735px;
+        width: 100%;
+        max-width: 1024px;
+     }
+
+     .hero-content {
+        position: relative;
+        top: 40px;
+    }
+
+    .hero-title-mobile {
+        display: none;
+    }
+
+    .hero-title-ipad {
+        display: none;
+    }
+
+    .hero-content h1 {
+    
+        font-size: 7vw;
+    }
+
+    .hero-content h2 {
+
+        font-size: 4vw;
+    }
+
+    .hero-button {
+        height: 40px;
+        width: 135px;
+        font-size: 14px;
+    }
+
+    .hero-button a {
+        height: 40px;
+        width: 135px;
+    }
+
+    @media screen and (max-width: 899px) {
+
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .logo {
+            margin: 0px;
+        }
+    
+        nav {
+            display: none;
+        }
+
+        .hero-button {
+            display: none;
+        }
+
+        .hero-title-mobile {
+            display: none;
+        }
+
+        .hero-title {
+            display: none;
+        }
+
+        .hero-title-ipad {
+            display: inline;
+        }
+
+        .hero-content h1 {
+            font-size: 8vw;
+            text-align: center;
+        }
+    
+        .hero-content h2 {
+            font-size: 4vw;
+        }
+    }
+
+    #servicios {
+        width: 100%;
+        max-width: 1024px;
+        height: 1050px;
+        scroll-margin-top: 30px;
+    }
+
+    .servicios {
+        height: 900px;
+        width: 95%;
+        max-width: 1024px;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 32px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 750px;
+    }
+
+    .servicios-info {
+        width: 90%;
+        height: 700px;
+    }
+
+    .servicios-content img {
+        display: none;
+    }
+
+    .derecho-civil {
+        width: 300px;
+        height: 270px;
+        grid-template-rows: 40px 250px;
+    }
+    
+    .derecho-civil h3 {
+        font-size: 21px;
+    }
+    
+    .derecho-civil p {
+        font-size: 16px;
+    }
+    
+    .derecho-penal {
+        width: 300px;
+        height: 270px;
+        grid-template-rows: 40px 215px;
+    }
+    
+    .derecho-penal h3 {
+        font-size: 21px;
+    }
+    
+    .derecho-penal p {
+        font-size: 16px;
+    }
+    
+    
+    .derecho-admin {
+        width: 300px;
+        height: 270px;
+        grid-template-rows: 40px 230px;
+    }
+    
+    
+    .derecho-admin h3 {
+        font-size: 21px;
+    }
+    
+    .derecho-admin p {
+        font-size: 16px;
+    }
+    
+    .asesor {
+        width: 300px;
+        height: 270px;
+        grid-template-rows: 40px 215px;
+    }
+    
+    .asesor h3 {
+        font-size: 21px;
+    }
+    
+    .asesor p {
+        font-size: 16px;
+    }
+
+    #biografia {
+        width: 100%;
+        max-width: 1024px;
+        height: 1050px;
+        scroll-margin-top: -160px;
+    }
+
+  .bio {
+    height: 780px;
+    width: 90%;
+  }
+
+  .bio img {
+    width: 38vw;
+    min-width: 350px;
+    height: auto;
+  }
+
+  .estudis {
+    width: 50%;
+    height: auto;
+  }
+
+  .estudis h3 {
+      font-size: 20px;
+  }
+
+  .estudis h4 {
+    font-size: 18px;
+}
+
+  .estudis p {
+      font-size: 16px;
+  }
+
+  @media screen and (max-width: 962px) {
+    #biografia {
+        width: 100%;
+        max-width: 1024px;
+        height: 1480px;
+        clip-path: none;
+    }
+
+    .bio {
+        height: 1300px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  .bio img {
+    width: 50vw;
+    min-width: 450px;
+    height: auto;
+  }
+
+  .estudis {
+    width: 80%;
+    height: auto;
+  }
+
+  .estudis h3 {
+      font-size: 20px;
+  }
+
+  .estudis h3 {
+    font-size: 18px;
+}
+
+  .estudis p {
+      font-size: 16px;
+  }
+
+  }
+
+  #contacto {
+        width: 100%;
+        max-width: 1024px;
+        height: 750px;
+        scroll-margin-top: -15px;
+    }
+
+    .contacto {
+        width: 75%;
+        height: 300px;
+    }
+
+    .contacto-info {
+        width: 300px;
+        height: 250px;
+    }
+
+    .dir-Terr,
+    .dir-BCN {
+        width: 100%;
+    }
+
+    .dir1,
+    .dir2 {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .icon-building {
+        width: 24px;
+        height: auto;
+        position: relative;
+    }
+
+    .contacte-tec {
+        width: 300px;
+        height: 250px;
+    }
+
+    .telef,
+    .email {
+        width: 100%;
+    }
+
+    .telef p,
+    .email p {
+        position: relative;
+        left: 10px;
+        font-size: 15px;
+    }
+
+    .icon-telf,
+    .icon-email {
+        width: 24px;
+        height: auto;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 1024px;
+        height: 350px;
+    }
+
+    .footer-content {
+        width: 90%;
+        height: 300px;
+    }
+
+    .footer-left {
+        width: 50%;
+        height: 260px;
+    }
+
+    .footer-address {
+        height: 260px;
+        width: 100%;
+    }
+
+    .footer-address a,
+    .footer-address p {
+        font-size: 15px;
+    }
+
+    .address1 {
+        width: 225px;
+    }
+
+    .address2 {
+        width: 228px;
+    }
+
+    .footer-righ {
+        width: 50%;
+        height: 260px;
+    }
+
+
+    .copyright {
+        margin-top: 30px;
+    }
+
+    .linkedin-circle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .linkedin-symbol {
+        width: 24px;
+        height: 24px;
+    }
+
+
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+
+    header {
+        width: 100%;
+        max-width: 1439px;
+    }
+
+    .header {
+        width: 100%;
+        max-width: 1439px;
+        height: 75px;
+    }
+
+    .logo {
+        height: 58px;
+        margin-left: 60px;
+    }
+
+    header img {
+        height: 58px;
+        width: auto;
+    }
+
+    nav {
+        width: 38%;
+        max-width: 400px; 
+        height: 50px;
+        margin-right: 70px;
+    }
+
+    nav ul {
+        height: 50px;
+    }
+
+    nav a {
+        height: 25px;
+        width: 84px;
+    }
+
+    nav li {
+        height: 25px;
+        width: 84px;
+        font-size: 15px;
+    }
+
+    .hero {
+        height: 735px;
+       width: 100%;
+       max-width: 1439px;
+    }
+
+    .hero-content {
+        position: relative;
+        top: 40px;
+    }
+
+    .hero-title-mobile {
+        display: none;
+    }
+
+    .hero-title-ipad {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 6vw;  
+    }
+
+    .hero-content h2 {
+        font-size: 3vw;
+    }
+
+    .hero-button {
+        height: 42px;
+        width: 145px;
+        font-size: 16px;
+    }
+
+    .hero-button a {
+        height: 40px;
+        width: 145px;
+    }
+
+    #servicios {
+        width: 100%;
+        max-width: 1439px;
+        height: 1050px;
+        scroll-margin-top: 30px;
+    }
+
+    .servicios {
+        height: 900px;
+        width: 95%;
+        max-width: 1439px;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 32px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 750px;
+    }
+
+    .servicios-info {
+        width: 70%;
+        height: 700px;
+    }
+
+    .servicios-content img {
+        height: auto;
+        width: 25vw;
+    }
+
+    .derecho-civil {
+        width: 330px;
+        height: 250px;
+        grid-template-rows: 40px 210px;
+    }
+    
+    .derecho-civil h3 {
+        font-size: 21px;
+    }
+    
+    .derecho-civil p {
+        font-size: 16px;
+    }
+    
+    .derecho-penal {
+        width: 330px;
+        height: 250px;
+        grid-template-rows: 40px 210px;
+    }
+    
+    .derecho-penal h3 {
+        font-size: 21px;
+    }
+    
+    .derecho-penal p {
+        font-size: 16px;
+    }
+    
+    .derecho-admin {
+        width: 330px;
+        height: 250px;
+        grid-template-rows: 40px 210px;
+    }
+    
+    .derecho-admin h3 {
+        font-size: 21px;
+    }
+    
+    .derecho-admin p {
+        font-size: 16px;
+    }
+    
+    .asesor {
+        width: 330px;
+        height: 250px;
+        grid-template-rows: 40px 190px;
+    }
+    
+    .asesor h3 {
+        font-size: 21px;
+    }
+    
+    .asesor p {
+        font-size: 16px;
+    }
+
+ 
+
+@media screen and (max-width: 1150px) {
+
+    .servicios-info {
+        width: 90%;
+        height: 700px;
+    }
+
+    .servicios-content img {
+       display: none;
+    }
+}
+
+    #biografia {
+        width: 100%;
+        max-width: 1440px;
+        height: 1050px;
+        scroll-margin-top: -150px;
+  }
+
+  .bio {
+    height: 720px;
+    width: 90%;
+  }
+
+  .bio img {
+    width: 30vw;
+    min-width: 380px;
+    height: auto;
+  }
+
+  .estudis {
+    width: 50%;
+    height: auto;
+  }
+
+  .estudis h3 {
+      font-size: 20px;
+  }
+
+  .estudis h4 {
+    font-size: 18px;
+}
+
+  .estudis p {
+      font-size: 16px;
+  }
+
+  #contacto{
+    width: 100%;
+    max-width: 1439px;
+    height: 800px;
+    scroll-margin-top: -35px;
+}
+
+.contacto {
+    width: 60%;
+    height: 400px;
+}
+
+.contacto-info {
+    width: 300px;
+    height: 250px;
+}
+
+.dir-Terr,
+.dir-BCN {
+    width: 100%;
+}
+
+.dir1,
+.dir2 {
+    width: 80%;
+    font-size: 16px;
+}
+
+.icon-building {
+    width: 25px;
+    height: auto;
+    position: relative;
+    bottom: 1.5px;
+}
+
+.contacte-tec {
+    width: 300px;
+    height: 250px;
+}
+
+.telef,
+.email {
+    width: 100%;
+}
+
+.telef p,
+.email p  {
+    position: relative;
+    left: 10px;
+    font-size: 15px;
+}
+
+.icon-telf,
+.icon-email {
+    width: 25px;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    max-width: 2560px;
+    height: 350px;
+}
+
+.footer-content {
+    width: 90%;
+    height: 300px;
+}
+
+.footer-left {
+    width: 50%;
+    height: 260px;
+}
+
+.footer-address {
+    height: 260px;
+    width: 100%;
+}
+
+.footer-address a,
+.footer-address p {
+    font-size: 15px;
+}
+
+.address1 {
+    width: 225px;
+}
+
+.address2 {
+    width: 228px;
+}
+
+.footer-righ {
+    width: 50%;
+    height: 260px;
+}
+
+
+.copyright {
+    margin-top: 30px;
+}
+
+.linkedin-circle {
+    width: 45px;
+    height: 45px;
+}
+
+.linkedin-symbol {
+    width: 22px;
+    height: 22px;
+}
+
+}
+
+
+@media screen and (min-width: 1441px){
+
+    header {
+        width: 100%;
+        max-width: 2560px;
+     }
+
+    .header {
+        width: 100%;
+        max-width: 2560px;
+        height: 78px;
+    }
+
+    .logo {
+        height: 68px;
+        margin-left: 80px;
+    }
+    
+    header img {
+        height: 68px;
+        width: auto;
+    }
+
+    nav {
+     
+        width: 33%;
+        max-width: 550px; 
+        height: 50px;
+        margin-right: 80px;
+    }
+
+    nav ul {
+        height: 50px;
+    }
+
+    nav a {
+        height: 29px;
+        width: 98px;
+    }
+
+    nav li {
+        height: 29px;
+        width: 98px;
+        font-size: 17px;
+    }
+
+    .hero {
+        height: 930px;
+        width: 100vw;
+        max-width: 2560px;
+    }
+
+    .hero-content {
+        position: relative;
+        top: 40px;
+    }
+
+    .hero-title-mobile {
+        display: none;
+    }
+
+    .hero-title-ipad {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3rem, 5.5vw, 8rem)  
+
+        /* ! CLAMP is like an interval, 3rem is de minimum value, 5vw is value by preference and 6rem is the maximum value it can take;
+        ! is important when we are using font-size vw (viewport) for resposive design; ¿maybe only in the last media query min-width? */
+    }
+
+    .hero-content h2 {
+        font-size: clamp(1rem, 3vw, 3rem)
+    }
+
+    .hero-button {
+        height: 50px;
+        width: 170px;
+        font-size: 17px;
+
+    }
+
+    .hero-button a {
+        height: 45px;
+        width: 170px;
+    }
+
+    #servicios {
+        width: 100%;
+        max-width: 2560px;
+        height: 1050px;
+        scroll-margin-top: 50px;
+    }
+
+    .servicios {
+        height: 800px;
+        width: 90%;
+        margin-top: 80px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 35px;
+    }
+
+    .servicios-content {
+        margin-top: 15px;
+        width: 100%;
+        height: 750px;
+    }
+
+    .servicios-info {
+        width: 60%;
+        height: 700px;
+    }
+
+    .servicios-content img {
+        height: auto;
+        width: 25vw;
+        max-width: 450px;
+    }
+
+    .derecho-civil {
+        width: 330px;
+        height: 270px;
+        grid-template-rows: 40px 250px;
+    }
+    
+    .derecho-civil h3 {
+        font-size: 22px;
+    }
+    
+    .derecho-civil p {
+        font-size: 17px;
+    }
+    
+    .derecho-penal {
+        width: 330px;
+        height: 270px;
+        grid-template-rows: 40px 210px;
+    }
+    
+    .derecho-penal h3 {
+        font-size: 22px;
+    }
+    
+    .derecho-penal p {
+        font-size: 17px;
+    }
+    
+    
+    .derecho-admin {
+        width: 330px;
+        height: 270px;
+        grid-template-rows: 40px 230px;
+    }
+    
+    
+    .derecho-admin h3 {
+        font-size: 22px;
+    }
+    
+    .derecho-admin p {
+        font-size: 17px;
+    }
+    
+    .asesor {
+        width: 330px;
+        height: 270px;
+        grid-template-rows: 40px 210px;
+    }
+    
+    .asesor h3 {
+        font-size: 22px;
+    }
+    
+    .asesor p {
+        font-size: 17px;
+    }
+      
+    #biografia {
+    width: 100%;
+    max-width: 2560px;
+    height: 1125px;
+    scroll-margin-top: -100px;
+  }
+
+  .bio {
+      height: 700px;
+      width: 80%;
+  }
+
+  .bio img {
+    width: 28vw;
+    height: auto;
+    max-width: 500px;
+
+  }
+
+  .estudis {
+      width: 50%;
+      height: auto;
+      /* margin-right: 10px; */
+  }
+
+  .estudis h3 {
+      font-size: 25px;
+  }
+
+  .estudis h4 {
+    font-size: 20px;
+}
+
+  .estudis p {
+      font-size: 17px;
+  }
+
+  #contacto{
+    width: 100%;
+    max-width: 2560px;
+    height: 950px;
+    scroll-margin-top: 20px;
+}
+
+.contacto {
+    width: 50%;
+    height: 450px;
+}
+
+.contacto-info {
+    width: 320px;
+    height: 400px;
+}
+
+.dir-Terr,
+.dir-BCN {
+    width: 320px;
+}
+
+.dir1,
+.dir2 {
+    width: 250px;
+    font-size: 17px;
+}
+
+.icon-building {
+    position: relative;
+    bottom: 1.5px;
+    width: 27px;
+    height: auto;
+}
+
+.contacte-tec {
+    width: 300px;
+    height: 400px;
+}
+
+.telef,
+.email {
+    width: 300px;
+}
+
+.telef p,
+.email p {
+    position: relative;
+    left: 10px;
+    font-size: 17px;
+}
+
+.icon-email {
+    width: 27px;
+    height: auto;
+}
+
+.icon-telf {
+    width: 27px;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    max-width: 2560px;
+    height: 350px;
+}
+
+.footer-content {
+    width: 90%;
+    height: 300px;
+}
+
+.footer-left {
+    width: 50%;
+    height: 260px;
+}
+
+.footer-address {
+    height: 260px;
+    width: 100%;
+}
+
+.footer-address a,
+.footer-address p {
+    font-size: 17px;
+}
+
+.address1 {
+    width: 238px;
+}
+
+.address2 {
+    width: 245px;
+}
+
+.footer-righ {
+    width: 50%;
+    height: 260px;
+}
+
+
+.copyright {
+    margin-top: 30px;
+}
+
+.linkedin-circle {
+    width: 55px;
+    height: 55px;
+}
+
+.linkedin-symbol {
+    width: 25px;
+    height: 25px;
+}
+
+}
+
+
