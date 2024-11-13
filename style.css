@@ -2203,6 +2203,10 @@ footer a:hover {
         font-size: 14px;
     }
 
+    .nav-dropdown-toggle {
+        display: none;
+    }
+
     .hero {
         height: 735px;
         width: 100%;
@@ -2688,6 +2692,10 @@ footer a:hover {
         font-size: 15px;
     }
 
+    .nav-dropdown-toggle {
+        display: none;
+    }
+
     .hero {
         height: 735px;
        width: 100%;
@@ -3024,6 +3032,10 @@ footer {
         height: 29px;
         width: 98px;
         font-size: 17px;
+    }
+
+    .nav-dropdown-toggle {
+        display: none;
     }
 
     .hero {
