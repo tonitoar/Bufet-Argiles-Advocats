@@ -1,5 +1,5 @@
 * {
-     border: 1px solid red; 
+     /* border: 1px solid red;  */
     margin:0;
     padding:0;
 }
@@ -69,6 +69,15 @@ nav li {
 nav li:hover {
     background-color: rgb(6, 28, 10);
 }
+
+/*! NAVBAR MOBILE */
+
+.nav-dropdown-toggle {
+    display: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  /*! NAVBAR MOBILE */
 
 #inicio {
     display: flex;
@@ -548,11 +557,12 @@ footer a:hover {
        max-width: 320px;
         height: 38px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .logo {
         height: 28px;
+        margin-left: 20px;
     }
 
     header img {
@@ -561,7 +571,85 @@ footer a:hover {
     }
 
     nav {
+        width: 25px;
+        height: auto;
+        margin-right: 48px;
+    }
+   
+        
+            /* NAVBAR MOBILE SHOW */
+    .nav-dropdown-toggle {
+        display: block; 
+        width: 20px;
+        height: 20px;
+        background-color: rgb(249, 249, 249);
+        border: none;
+    }
+
+    .nav-dropdown-toggle img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NAVBAR DESKTOP HIDE */
+    .nav-dropdown-menu {
         display: none;
+        background-color: rgb(249, 249, 249);
+        width: 120px;
+        position: absolute;
+        height: auto;
+        top: 100%;
+        right: 0%; 
+        z-index: 10;
+        padding: 10px 0px;
+        border: 1px solid rgb(12, 53, 18);
+    }
+    .nav-dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border-radius: 5px;
+    }
+
+    nav a {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0px;
+    }
+    
+    
+    nav a:visited,
+    nav a:link,
+    nav a:active  {
+        color: rgb(12, 53, 18);
+    }
+    
+    nav li {
+        width: 92px;
+        padding: 0px;
+        cursor: pointer;
+        background: none;
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7px 0px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    nav li:hover {
+        background: none;
+    }
+
+    nav a {
+    margin: 0px;
+    background: none;
+    border-color: none;
+    color: rgb(12, 53, 18);
     }
 
     .hero {
@@ -837,11 +925,12 @@ footer a:hover {
        max-width: 375px;
         height: 42px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .logo {
         height: 32px;
+        margin-left: 30px;
     }
 
     header img {
@@ -850,7 +939,85 @@ footer a:hover {
     }
 
     nav {
+        width: 25px;
+        height: auto;
+        margin-right: 48px;
+    }
+   
+        
+            /* NAVBAR MOBILE SHOW */
+    .nav-dropdown-toggle {
+        display: block; 
+        width: 25px;
+        height: 25px;
+        background-color: rgb(249, 249, 249);
+        border: none;
+    }
+
+    .nav-dropdown-toggle img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NAVBAR DESKTOP HIDE */
+    .nav-dropdown-menu {
         display: none;
+        background-color: rgb(249, 249, 249);
+        width: 120px;
+        position: absolute;
+        height: auto;
+        top: 100%;
+        right: 0%; 
+        z-index: 10;
+        padding: 10px 0px;
+        border: 1px solid rgb(12, 53, 18);
+    }
+    .nav-dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border-radius: 5px;
+    }
+
+    nav a {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0px;
+    }
+    
+    
+    nav a:visited,
+    nav a:link,
+    nav a:active  {
+        color: rgb(12, 53, 18);
+    }
+    
+    nav li {
+        width: 92px;
+        padding: 0px;
+        cursor: pointer;
+        background: none;
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7px 0px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    nav li:hover {
+        background: none;
+    }
+
+    nav a {
+    margin: 0px;
+    background: none;
+    border-color: none;
+    color: rgb(12, 53, 18);
     }
 
     .hero {
@@ -1124,11 +1291,12 @@ footer a:hover {
        max-width: 425px;
         height: 45px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .logo {
         height: 35px;
+        margin-left: 30px;
     }
 
     header img {
@@ -1137,7 +1305,85 @@ footer a:hover {
     }
 
     nav {
+        width: 25px;
+        height: auto;
+        margin-right: 48px;
+    }
+   
+        
+            /* NAVBAR MOBILE SHOW */
+    .nav-dropdown-toggle {
+        display: block; 
+        width: 25px;
+        height: 25px;
+        background-color: rgb(249, 249, 249);
+        border: none;
+    }
+
+    .nav-dropdown-toggle img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NAVBAR DESKTOP HIDE */
+    .nav-dropdown-menu {
         display: none;
+        background-color: rgb(249, 249, 249);
+        width: 120px;
+        position: absolute;
+        height: auto;
+        top: 100%;
+        right: 0%; 
+        z-index: 10;
+        padding: 10px 0px;
+        border: 1px solid rgb(12, 53, 18);
+    }
+    .nav-dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border-radius: 5px;
+    }
+
+    nav a {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0px;
+    }
+    
+    
+    nav a:visited,
+    nav a:link,
+    nav a:active  {
+        color: rgb(12, 53, 18);
+    }
+    
+    nav li {
+        width: 92px;
+        padding: 0px;
+        cursor: pointer;
+        background: none;
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7px 0px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    nav li:hover {
+        background: none;
+    }
+
+    nav a {
+    margin: 0px;
+    background: none;
+    border-color: none;
+    color: rgb(12, 53, 18);
     }
 
     .hero {
@@ -1415,11 +1661,12 @@ footer a:hover {
         max-width: 768px;
         height: 60px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .logo {
         height: 50px;
+        margin-left: 60px;
     }
 
     header img {
@@ -1428,7 +1675,85 @@ footer a:hover {
     }
 
     nav {
+        width: 25px;
+        height: auto;
+        margin-right: 60px;
+    }
+   
+        
+            /* NAVBAR MOBILE SHOW */
+    .nav-dropdown-toggle {
+        display: block; 
+        width: 25px;
+        height: 25px;
+        background-color: rgb(249, 249, 249);
+        border: none;
+    }
+
+    .nav-dropdown-toggle img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NAVBAR DESKTOP HIDE */
+    .nav-dropdown-menu {
         display: none;
+        background-color: rgb(249, 249, 249);
+        width: 150px;
+        position: absolute;
+        height: auto;
+        top: 100%;
+        right: 0%; 
+        z-index: 10;
+        padding: 10px 0px;
+        border: 1px solid rgb(12, 53, 18);
+    }
+    .nav-dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border-radius: 5px;
+    }
+
+    nav a {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0px;
+    }
+    
+    
+    nav a:visited,
+    nav a:link,
+    nav a:active  {
+        color: rgb(12, 53, 18);
+    }
+    
+    nav li {
+        width: 92px;
+        padding: 0px;
+        cursor: pointer;
+        background: none;
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7px 0px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    nav li:hover {
+        background: none;
+    }
+
+    nav a {
+    margin: 0px;
+    background: none;
+    border-color: none;
+    color: rgb(12, 53, 18);
     }
 
     .hero {
@@ -1451,12 +1776,12 @@ footer a:hover {
     }
 
     .hero-content h1 {
-        font-size: 8.6vw;
+        font-size: 8vw;
         text-align: center;
     }
 
     .hero-content h2 {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     .hero-button {
@@ -1922,15 +2247,93 @@ footer a:hover {
 
         .header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
         }
     
         .logo {
-            margin: 0px;
+            margin-left: 60px;
         }
-    
+
         nav {
+            width: 30px;
+            height: auto;
+            margin-right: 60px;
+        }
+       
+            
+                /* NAVBAR MOBILE SHOW */
+        .nav-dropdown-toggle {
+            display: block; 
+            width: 30px;
+            height: 30px;
+            background-color: rgb(249, 249, 249);
+            border: none;
+        }
+
+        .nav-dropdown-toggle img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* NAVBAR DESKTOP HIDE */
+        .nav-dropdown-menu {
             display: none;
+            background-color: rgb(249, 249, 249);
+            width: 150px;
+            position: absolute;
+            height: auto;
+            top: 100%;
+            right: 0%; 
+            z-index: 10;
+            padding: 10px 0px;
+            border: 1px solid rgb(12, 53, 18);
+        }
+        .nav-dropdown-menu.show {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 0px;
+        }
+        
+        
+        nav a:visited,
+        nav a:link,
+        nav a:active  {
+            color: rgb(12, 53, 18);
+        }
+        
+        nav li {
+            width: 92px;
+            padding: 0px;
+            cursor: pointer;
+            background: none;
+            border-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 7px 0px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        
+        nav li:hover {
+            background: none;
+        }
+
+        nav a {
+        margin: 0px;
+        background: none;
+        border-color: none;
+        color: rgb(12, 53, 18);
         }
 
         .hero-button {
@@ -2054,7 +2457,7 @@ footer a:hover {
         width: 100%;
         max-width: 1024px;
         height: 1050px;
-        scroll-margin-top: -160px;
+        scroll-margin-top: -10px;
     }
 
   .bio {
