@@ -193,17 +193,16 @@ nav li:hover {
 .derecho-civil h3 {
   text-align: center;
   grid-area: titulo1;
-  margin: 40px 5px 0px 5px;
+  margin: 0px;
   align-self: center;
-  padding: 10px;
+  padding: 10px 5px 5px;
 }
 
 .derecho-civil p {
-  text-align: left;
   grid-area: contenido1;
   margin: 5px;
   align-self: center;
-  padding: 10px;
+  padding: 8px 10px 10px;
 }
 
 .derecho-penal {
@@ -223,17 +222,16 @@ nav li:hover {
   text-align: center;
   display: grid;
   align-items: end;
-  margin: 40px 5px 0px 5px;
+  margin: 0px;
   align-self: center;
-  padding: 10px;
+  padding: 10px 5px 5px;
 }
 
 .derecho-penal p {
   grid-area: contenido2;
-  text-align: left;
   margin: 5px;
   align-self: center;
-  padding: 10px;
+  padding: 8px 10px 10px;
 }
 
 .derecho-admin {
@@ -251,17 +249,16 @@ nav li:hover {
 .derecho-admin h3 {
   grid-area: titulo3;
   text-align: center;
-  margin: 40px 5px 0px 5px;
+  margin: 0px;
   align-self: center;
-  padding: 10px;
+  padding: 10px 5px 5px;
 }
 
 .derecho-admin p {
   grid-area: contenido3;
-  text-align: left;
   margin: 5px 5px 5px 5px;
   align-self: center;
-  padding: 10px;
+  padding: 8px 10px 10px;
 }
 
 .asesor {
@@ -279,17 +276,16 @@ nav li:hover {
 .asesor h3 {
   grid-area: titulo3;
   text-align: center;
-  margin: 40px 5px 0px 5px;
+  margin: 0px;
   align-self: center;
-  padding: 10px 7px;
+  padding: 10px 5px 5px;
 }
 
 .asesor p {
   grid-area: contenido3;
-  text-align: left;
   margin: 5px 5px 5px 5px;
   align-self: center;
-  padding: 10px;
+  padding: 8px 10px 10px;
 }
 
 #biografia {
@@ -417,8 +413,8 @@ nav li:hover {
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.775),
-      rgba(255, 255, 255, 0.775)
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
     ),
     url(images/image4.webp);
   background-size: cover;
@@ -2092,7 +2088,7 @@ footer a:hover {
     .derecho-penal p,
     .derecho-admin p,
     .asesor p {
-      margin: 5px;
+      margin: 0px 5px 5px;
       font-size: 15px;
       text-align: left;
     }
@@ -3122,7 +3118,7 @@ footer a:hover {
 
   .logo {
     height: 68px;
-    margin-left: 80px;
+    margin-left: 60px;
   }
 
   header img {
@@ -3231,62 +3227,41 @@ footer a:hover {
     max-width: 450px;
   }
 
-  .derecho-civil {
-    width: 330px;
-    height: 270px;
-    grid-template-rows: 40px 250px;
-  }
+.derecho-civil,
+.derecho-admin,
+.derecho-penal,
+.asesor{
+  width: 330px;
+  height: 240px;
+} 
 
-  .derecho-civil h3 {
-    font-size: 22px;
-  }
+.derecho-civil,
+.derecho-admin {
+  grid-template-rows: 60px 165px;
+} 
 
-  .derecho-civil p {
-    font-size: 17px;
-  }
+.derecho-penal {
+  grid-template-rows: 60px 140px;
+}
 
-  .derecho-penal {
-    width: 330px;
-    height: 270px;
-    grid-template-rows: 40px 210px;
-  }
+.asesor {
+  grid-template-rows: 60px 125px;
+}
 
-  .derecho-penal h3 {
-    font-size: 22px;
-  }
+.derecho-civil h3,
+.derecho-penal h3,
+.derecho-admin h3,
+.asesor h3 {
+  font-size: 22px;
+}
 
-  .derecho-penal p {
-    font-size: 17px;
-  }
-
-  .derecho-admin {
-    width: 330px;
-    height: 270px;
-    grid-template-rows: 40px 230px;
-  }
-
-  .derecho-admin h3 {
-    font-size: 22px;
-  }
-
-  .derecho-admin p {
-    font-size: 17px;
-  }
-
-  .asesor {
-    width: 330px;
-    height: 270px;
-    grid-template-rows: 40px 210px;
-  }
-
-  .asesor h3 {
-    font-size: 22px;
-  }
-
-  .asesor p {
-    font-size: 17px;
-  }
-
+.derecho-civil p,
+.derecho-penal p,
+.derecho-admin p,
+.asesor p {
+  font-size: 17px;
+}
+  
   #biografia {
     width: 100%;
     max-width: 2560px;
@@ -3316,11 +3291,11 @@ footer a:hover {
   }
 
   .estudis h4 {
-    font-size: 18px;
+    font-size: 18.5px;
   }
 
   .estudis p {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   #contacto {
@@ -3349,11 +3324,12 @@ footer a:hover {
   .dir2 {
     width: 250px;
     font-size: 17px;
+    font-weight: 500;
   }
 
   .icon-building {
     position: relative;
-    bottom: 1.5px;
+    top: 0.9px;
     width: 27px;
     height: auto;
   }
@@ -3373,6 +3349,7 @@ footer a:hover {
     position: relative;
     left: 10px;
     font-size: 17px;
+    font-weight: 500;
   }
 
   .icon-email {
@@ -3388,12 +3365,13 @@ footer a:hover {
   footer {
     width: 100%;
     max-width: 2560px;
-    height: 350px;
+    height: auto;
+    padding-top: 40px;
   }
 
   .footer-content {
     width: 90%;
-    height: 300px;
+    height: auto;
   }
 
   .footer-left {
@@ -3406,9 +3384,8 @@ footer a:hover {
     width: 100%;
   }
 
-  .footer-address a,
-  .footer-address p {
-    font-size: 17px;
+  .footer-address strong {
+    font-size: 15.5px;
   }
 
   .address1 {
@@ -3426,15 +3403,16 @@ footer a:hover {
 
   .copyright {
     margin-top: 30px;
+    font-size: 15px;
   }
 
   .linkedin-circle {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
 
   .linkedin-symbol {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
 }
