@@ -3237,15 +3237,15 @@ footer a:hover {
 
 .derecho-civil,
 .derecho-admin {
-  grid-template-rows: 60px 165px;
+  grid-template-rows: 65px 160px;
 } 
 
 .derecho-penal {
-  grid-template-rows: 60px 140px;
+  grid-template-rows: 65px 135px;
 }
 
 .asesor {
-  grid-template-rows: 60px 125px;
+  grid-template-rows: 65px 120px;
 }
 
 .derecho-civil h3,
