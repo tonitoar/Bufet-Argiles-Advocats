@@ -2436,8 +2436,8 @@ footer a:hover {
     /* NAVBAR MOBILE SHOW */
     .nav-dropdown-toggle {
       display: block;
-      width: 22.5px;
-      height: 22.5px;
+      width: 20px;
+      height: 20px;
       background-color: rgb(249, 249, 249);
       border: none;
     }
@@ -2529,12 +2529,12 @@ footer a:hover {
     }
 
     .hero-content h1 {
-      font-size: 7vw;
+      font-size: 6.5vw;
       text-align: center;
     }
 
     .hero-content h2 {
-      font-size: 3.5vw;
+      font-size: 3vw;
     }
   }
 
@@ -2608,51 +2608,27 @@ footer a:hover {
   .servicios-info {
     width: 95%;
   }
-/* 
-  .derecho-civil,
-  .derecho-admin,
-  .derecho-penal,
-  .asesor{
-    width: 320px;
-    height: 215px;
-  } 
-  
-  .derecho-civil,
-  .derecho-admin {
-    grid-template-rows: 60px 135px;
-  } 
-  
-  .derecho-penal {
-    grid-template-rows: 60px 115px;
-  }
-  
-  .asesor {
-    grid-template-rows: 60px 97px;
-  } */
 }
 
 @media screen and (max-width: 854px) {
-  /* .servicios-info {
-    width: 100%;
-  } */
   .derecho-civil,
   .derecho-admin,
   .derecho-penal,
   .asesor{
     width: 300px;
-    height: 230px;
+    height: 233px;
   } 
   
   .derecho-civil{
-    grid-template-rows: 55px 160px;
+    grid-template-rows: 55px 162px;
   } 
 
   .derecho-admin {
-    grid-template-rows: 55px 140px;
+    grid-template-rows: 55px 142px;
   }
   
   .derecho-penal {
-    grid-template-rows: 55px 120px;
+    grid-template-rows: 55px 125px;
   }
   
   .asesor {
@@ -2679,7 +2655,7 @@ footer a:hover {
   }
 
   .bio img {
-    width: 55vw;
+    width: 50vw;
     max-width: 400px;
     height: auto;
   }
@@ -2704,7 +2680,6 @@ footer a:hover {
 
   #contacto {
     width: 100%;
-    max-width: 1024px;
     height: 750px;
     scroll-margin-top: -15px;
   }
@@ -2727,13 +2702,14 @@ footer a:hover {
   .dir1,
   .dir2 {
     width: 80%;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .icon-building {
     width: 24px;
     height: auto;
     position: relative;
+    top: 0.9px;
   }
 
   .contacte-tec {
@@ -2761,13 +2737,13 @@ footer a:hover {
 
   footer {
     width: 100%;
-    max-width: 1024px;
-    height: 350px;
+    height: auto;
+    padding-top: 40px;
   }
 
   .footer-content {
     width: 90%;
-    height: 300px;
+    height: auto;
   }
 
   .footer-left {
@@ -2780,9 +2756,8 @@ footer a:hover {
     width: 100%;
   }
 
-  .footer-address a,
-  .footer-address p {
-    font-size: 15px;
+  .footer-address strong {
+    font-size: 13px;
   }
 
   .address1 {
@@ -2800,18 +2775,23 @@ footer a:hover {
 
   .copyright {
     margin-top: 30px;
+    font-size: 12.5px;
   }
 
   .linkedin-circle {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 
   .linkedin-symbol {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
   }
 }
+
+
+
+
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   header {
     width: 100%;
@@ -3055,7 +3035,7 @@ footer a:hover {
   .email p {
     position: relative;
     left: 10px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .icon-telf,
@@ -3086,7 +3066,7 @@ footer a:hover {
   }
 
   .footer-address strong {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .address1 {
@@ -3104,12 +3084,12 @@ footer a:hover {
 
   .copyright {
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 13.5px;
   }
 
   .linkedin-circle {
-    width: 43px;
-    height: 43px;
+    width: 42.5px;
+    height: 42.5px;
   }
 
   .linkedin-symbol {
@@ -3242,7 +3222,7 @@ footer a:hover {
 .derecho-penal,
 .asesor{
   width: 330px;
-  height: 240px;
+  height: 242px;
 } 
 
 .derecho-civil,
@@ -3391,7 +3371,7 @@ footer a:hover {
   }
 
   .footer-address strong {
-    font-size: 15.5px;
+    font-size: 14px;
   }
 
   .address1 {
@@ -3409,16 +3389,16 @@ footer a:hover {
 
   .copyright {
     margin-top: 30px;
-    font-size: 15px;
+    font-size: 13.5px;
   }
 
   .linkedin-circle {
-    width: 45px;
-    height: 45px;
+    width: 42.5px;
+    height: 42.5px;
   }
 
   .linkedin-symbol {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 }
