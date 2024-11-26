@@ -203,6 +203,7 @@ nav li:hover {
   margin: 5px;
   align-self: center;
   padding: 8px 10px 10px;
+  line-height: 1.3;
 }
 
 .derecho-penal {
@@ -232,6 +233,7 @@ nav li:hover {
   margin: 5px;
   align-self: center;
   padding: 8px 10px 10px;
+  line-height: 1.3;
 }
 
 .derecho-admin {
@@ -259,6 +261,7 @@ nav li:hover {
   margin: 5px 5px 5px 5px;
   align-self: center;
   padding: 8px 10px 10px;
+  line-height: 1.3;
 }
 
 .asesor {
@@ -286,6 +289,7 @@ nav li:hover {
   margin: 5px 5px 5px 5px;
   align-self: center;
   padding: 8px 10px 10px;
+  line-height: 1.3;
 }
 
 #biografia {
@@ -954,7 +958,7 @@ footer a:hover {
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 376px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
   header {
     width: 100%;
   }
@@ -964,6 +968,7 @@ footer a:hover {
     height: 47px;
     display: flex;
     justify-content: space-between;
+    background-color: blue;
   }
 
   .logo {
@@ -1121,6 +1126,7 @@ footer a:hover {
       "derecho-admin"
       "asesor";
     padding: 10px 0px;
+   justify-items: center;
   }
 
   .servicios-content img {
@@ -1129,33 +1135,45 @@ footer a:hover {
 
   .derecho-civil,
   .derecho-penal,
-  .derecho-admin,
+  .asesor{
+    width: 235px;
+    height: 267px;
+  } 
+
+  .derecho-admin {
+    width: 235px;
+    height: 269px;
+  }
+  
+  .derecho-civil{
+    grid-template-rows: 55px 197px;
+  } 
+
+  .derecho-admin {
+    grid-template-rows: 55px 202px;
+  }
+  
+  .derecho-penal {
+    grid-template-rows: 55px 163px;
+  }
+  
   .asesor {
-    width: 75%;
-    grid-template-rows: auto;
-    height: auto;
-    justify-self: center;
+    grid-template-rows: 55px 165px;
   }
+  
+    .derecho-civil h3,
+    .derecho-penal h3,
+    .derecho-admin h3,
+    .asesor h3 {
+      font-size: 21.5px;
+    }
 
-  .derecho-civil h3,
-  .derecho-penal h3,
-  .derecho-admin h3,
-  .asesor h3 {
-    margin: 0px;
-    font-size: 19px;
-    padding: 10px ;
-    margin: 12px 10px 0px;
-  }
-
-  .derecho-civil p,
-  .derecho-penal p,
-  .derecho-admin p,
-  .asesor p {
-    padding: 10px 10px 17px;
-    margin: 0px 7px;
-    font-size: 14px;
-    text-align: left;
-  }
+    .derecho-civil p,
+    .derecho-penal p,
+    .derecho-admin p,
+    .asesor p {
+      font-size: 15.5px;
+    }
 
   #biografia {
     width: 100%;
@@ -1176,26 +1194,25 @@ footer a:hover {
 
   .bio img {
     width: 80vw;
-    max-width: 280px;
     height: auto;
     border-radius: 2.5px;
   }
 
   .estudis {
-    width: 85%;
+    width: 87.5%;
     height: auto;
   }
 
   .estudis h3 {
-    font-size: 19px;
+    font-size: 19.5px;
   }
 
   .estudis h4 {
-    font-size: 17px;
+    font-size: 17.5px;
   }
 
   .estudis p {
-    font-size: 14px;
+    font-size: 15.5px;
   }
 
   #contacto {
@@ -1304,16 +1321,17 @@ footer a:hover {
   }
 
   .linkedin-circle {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
   }
+
   .linkedin-symbol {
-    width: 15px;
-    height: auto;
+    width: 14px;
+    height: 14px;
   }
 }
 
-@media screen and (min-width: 377px) and (max-width: 425px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
   header {
     width: 100%;
   }
@@ -1323,6 +1341,7 @@ footer a:hover {
     height: 47px;
     display: flex;
     justify-content: space-between;
+    background-color: red;
   }
 
   .logo {
@@ -1488,33 +1507,45 @@ footer a:hover {
 
   .derecho-civil,
   .derecho-penal,
-  .derecho-admin,
+  .asesor{
+    width: 250px;
+    height: 268px;
+  } 
+
+  .derecho-admin {
+    width: 250px;
+    height: 267px;
+  }
+  
+  .derecho-civil{
+    grid-template-rows: 55px 197px;
+  } 
+
+  .derecho-admin {
+    grid-template-rows: 55px 200px;
+  }
+  
+  .derecho-penal {
+    grid-template-rows: 55px 175px;
+  }
+  
   .asesor {
-    width: 75%;
-    grid-template-rows: auto;
-    height: auto;
-    justify-self: center;
+    grid-template-rows: 55px 158px;
   }
+  
+    .derecho-civil h3,
+    .derecho-penal h3,
+    .derecho-admin h3,
+    .asesor h3 {
+      font-size: 22px;
+    }
 
-  .derecho-civil h3,
-  .derecho-penal h3,
-  .derecho-admin h3,
-  .asesor h3 {
-    margin: 0px;
-    font-size: 19px;
-    padding: 10px ;
-    margin: 12px 10px 0px;
-  }
-
-  .derecho-civil p,
-  .derecho-penal p,
-  .derecho-admin p,
-  .asesor p {
-    padding: 10px 10px 17px;
-    margin: 0px 7px;
-    font-size: 14px;
-    text-align: left;
-  }
+    .derecho-civil p,
+    .derecho-penal p,
+    .derecho-admin p,
+    .asesor p {
+      font-size: 16px;
+    }
 
   #biografia {
     width: 100%;
@@ -1535,7 +1566,6 @@ footer a:hover {
 
   .bio img {
     width: 75vw;
-    min-width: 285px;
     height: auto;
     border-radius: 2.5px;
   }
@@ -1546,15 +1576,15 @@ footer a:hover {
   }
 
   .estudis h3 {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .estudis h4 {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .estudis p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   #contacto {
@@ -1624,12 +1654,12 @@ footer a:hover {
   footer {
     width: 100%;
     height: auto;
+    padding-top: 40px;
   }
 
   .footer-content {
     width: 95%;
     height: auto;
-    padding: 40px 0px 5px;
   }
 
   .footer-left {
@@ -1642,8 +1672,7 @@ footer a:hover {
     width: 99%;
   }
 
-  .footer-address a,
-  .footer-address p {
+  .footer-address strong {
     font-size: 12px;
   }
 
@@ -1656,10 +1685,6 @@ footer a:hover {
     width: 100%;
   }
 
-  /* .address2 {
-        width: 95%;
-    } */
-
   .footer-righ {
     width: 40%;
     height: 260px;
@@ -1667,15 +1692,17 @@ footer a:hover {
 
   .copyright {
     margin-top: 30px;
+    font-size: 11.5px;
   }
 
   .linkedin-circle {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
+
   .linkedin-symbol {
-    width: 16px;
-    height: auto;
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -1689,6 +1716,7 @@ footer a:hover {
     height: 50px;
     display: flex;
     justify-content: space-between;
+    background-color: blueviolet;
   }
 
   .logo {
@@ -1900,37 +1928,37 @@ footer a:hover {
   .derecho-penal,
   .asesor{
     width: 270px;
-    height: 223px;
+    height: 246px;
   } 
   
   .derecho-civil{
-    grid-template-rows: 50px 162px;
+    grid-template-rows: 55px 177px;
   } 
 
   .derecho-admin {
-    grid-template-rows: 50px 165px;
+    grid-template-rows: 55px 164px;
   }
   
   .derecho-penal {
-    grid-template-rows: 50px 143px;
+    grid-template-rows: 55px 141px;
   }
   
   .asesor {
-    grid-template-rows: 50px 130px;
+    grid-template-rows: 55px 125px;
   }
   
   .derecho-civil h3,
   .derecho-penal h3,
   .derecho-admin h3,
   .asesor h3 {
-    font-size: 21px;
+    font-size: 21.5px;
   }
   
   .derecho-civil p,
   .derecho-penal p,
   .derecho-admin p,
   .asesor p {
-    font-size: 15px;
+    font-size: 15.5px;
   }
 
   @media screen and (max-width: 700px) {
@@ -1969,42 +1997,46 @@ footer a:hover {
         padding: 10px 0px;
       }
 
-      .derecho-civil,
-  .derecho-admin,
+  .derecho-civil,
   .derecho-penal,
   .asesor{
     width: 250px;
-    height: 237px;
-  } 
-  
-  .derecho-civil{
-    grid-template-rows: 52.5px 172px;
+    height: 248px;
   } 
 
   .derecho-admin {
-    grid-template-rows: 52.5px 177px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .derecho-civil{
+    grid-template-rows: 55px 178px;
+  } 
+
+  .derecho-admin {
+    grid-template-rows: 55px 181px;
   }
   
   .derecho-penal {
-    grid-template-rows: 52.5px 143px;
+    grid-template-rows: 55px 163px;
   }
   
   .asesor {
-    grid-template-rows: 52.5px 130px;
+    grid-template-rows: 55px 145px;
   }
   
     .derecho-civil h3,
     .derecho-penal h3,
     .derecho-admin h3,
     .asesor h3 {
-      font-size: 21px;
+      font-size: 21.5px;
     }
 
     .derecho-civil p,
     .derecho-penal p,
     .derecho-admin p,
     .asesor p {
-      font-size: 15px;
+      font-size: 15.5px;
     }
 
   }
@@ -2020,7 +2052,6 @@ footer a:hover {
   .bio {
     height: auto;
     width: 90%;
-    /* padding: 0px 0px; */
     gap: 80px;
     display: flex;
     flex-direction: column;
@@ -2029,8 +2060,8 @@ footer a:hover {
   }
 
   .bio img {
-    width: 75vw;
-    max-width: 400px;
+    width: 65vw;
+    max-width: 375px;
     height: auto;
   }
 
@@ -2048,18 +2079,17 @@ footer a:hover {
   }
 
   .estudis p {
-    font-size: 15px;
+    font-size: 15.5px;
   }
 
   #contacto {
     width: 100%;
-    max-width: 768px;
     height: 600px;
   }
 
   .contacto {
     width: 70%;
-    height: 280px;
+    height: 300px;
     display: flex;
     flex-direction: column;
   }
@@ -2114,13 +2144,13 @@ footer a:hover {
 
   footer {
     width: 100%;
-    max-width: 768px;
-    height: 350px;
+    height: auto;
+    padding-top: 40px;
   }
 
   .footer-content {
     width: 90%;
-    height: 300px;
+    height: auto;
   }
 
   .footer-left {
@@ -2133,8 +2163,7 @@ footer a:hover {
     width: 100%;
   }
 
-  .footer-address a,
-  .footer-address p {
+  .footer-address strong {
     font-size: 12px;
   }
 
@@ -2153,15 +2182,17 @@ footer a:hover {
 
   .copyright {
     margin-top: 30px;
+    font-size: 11.5px;
   }
 
   .linkedin-circle {
     width: 35px;
     height: 35px;
   }
+
   .linkedin-symbol {
     width: 16px;
-    height: auto;
+    height: 16px;
   }
 }
 
@@ -2173,6 +2204,7 @@ footer a:hover {
   .header {
     width: 100%;
     height: 60px;
+    background-color: green;
   }
 
   .logo {
@@ -2252,16 +2284,16 @@ footer a:hover {
     .header {
       display: flex;
       justify-content: space-between;
-      height: 55px;
+      height: 47px;
     }
 
     .logo {
-      height: 45px;
+      height: 37px;
       margin-left: 40px;
     }
   
     header img {
-      height: 45px;
+      height: 37px;
       width: auto;
     }
 
@@ -2367,12 +2399,12 @@ footer a:hover {
     }
 
     .hero-content h1 {
-      font-size: 6.75vw;
+      font-size: clamp(3.25rem, 6vw, 7rem);
       text-align: center;
     }
 
     .hero-content h2 {
-      font-size: 3vw;
+      font-size: clamp(1.35rem, 2.6vw, 4rem);
     }
   }
 
@@ -2411,8 +2443,8 @@ footer a:hover {
   .derecho-admin,
   .derecho-penal,
   .asesor{
-    width: 330px;
-    height: 205px;
+    width: 270px;
+    height: 265px;
   } 
   
   .derecho-civil,
@@ -2448,7 +2480,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 854px) {
+/* @media screen and (max-width: 854px) {
   .derecho-civil,
   .derecho-admin,
   .derecho-penal,
@@ -2472,7 +2504,7 @@ footer a:hover {
   .asesor {
     grid-template-rows: 55px 120px;
   }
-}
+} */
 
   #biografia {
     width: 100%;
