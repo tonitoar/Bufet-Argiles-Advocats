@@ -2568,10 +2568,62 @@ footer a:hover {
     width: 90%;
     height: 700px;
   }
+  
+  @media screen and (max-width: 939px) {
+    .servicios-info {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 854px) {
+    .servicios-info {
+      width: 100%;
+    }
+  }
 
   .servicios-content img {
     display: none;
   }
+
+  .derecho-civil,
+  .derecho-admin,
+  .derecho-penal,
+  .asesor{
+    width: 330px;
+    height: 230px;
+  } 
+  
+  .derecho-civil{
+    grid-template-rows: 60px 140px;
+  } 
+  
+  .derecho-penal {
+    grid-template-rows: 60px 139px;
+  }
+
+  .derecho-admin {
+    grid-template-rows: 60px 140px;
+  }
+  
+  .asesor {
+    grid-template-rows: 60px 120px;
+  }
+  
+  .derecho-civil h3,
+  .derecho-penal h3,
+  .derecho-admin h3,
+  .asesor h3 {
+    font-size: 1.325rem;
+  }
+  
+  .derecho-civil p,
+  .derecho-penal p,
+  .derecho-admin p,
+  .asesor p {
+    font-size: 1rem;
+  }
+  
+  @media screen and (max-width: 899px) {
 
   .derecho-civil,
   .derecho-admin,
@@ -2586,7 +2638,7 @@ footer a:hover {
   } 
   
   .derecho-penal {
-    grid-template-rows: 55px 130px;
+    grid-template-rows: 60px 130px;
     gap: 5px; 
   }
 
@@ -2595,7 +2647,7 @@ footer a:hover {
   }
   
   .asesor {
-    grid-template-rows: 55px 115px;
+    grid-template-rows: 60px 115px;
     gap: 5px; 
   }
   
@@ -2612,44 +2664,7 @@ footer a:hover {
   .asesor p {
     font-size: 0.95rem;
   }
-
-@media screen and (max-width: 939px) {
-  .servicios-info {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 854px) {
-  .servicios-info {
-    width: 100%;
-  }
-}
-
-/* @media screen and (max-width: 854px) {
-  .derecho-civil,
-  .derecho-admin,
-  .derecho-penal,
-  .asesor{
-    width: 300px;
-    height: 233px;
-  } 
-  
-  .derecho-civil{
-    grid-template-rows: 55px 162px;
-  } 
-
-  .derecho-admin {
-    grid-template-rows: 55px 142px;
-  }
-  
-  .derecho-penal {
-    grid-template-rows: 55px 125px;
-  }
-  
-  .asesor {
-    grid-template-rows: 55px 120px;
-  }
-} */
+} 
 
   #biografia {
     width: 100%;
@@ -2997,49 +3012,59 @@ footer a:hover {
     height: 750px;
   }
 
+  @media screen and (min-width: 1151px) and (max-width: 1206px){
+    .servicios-content {
+      justify-content: space-between;
+    }
+  }
+
   .servicios-info {
     width: 70%;
+    max-width: 850px;
     height: 700px;
   }
 
   .servicios-content img {
     height: auto;
-    width: 25vw;
+    width: 27.5vw;
   }
 
   .derecho-civil,
   .derecho-admin,
   .derecho-penal,
   .asesor{
-    width: 330px;
-    height: 205px;
+    width: 320px;
+    height: 240px;
   } 
   
-  .derecho-civil,
-  .derecho-admin {
-    grid-template-rows: 60px 127px;
+  .derecho-civil{
+    grid-template-rows: 60px 140px;
   } 
   
   .derecho-penal {
-    grid-template-rows: 60px 127px;
+    grid-template-rows: 60px 130px;
+  }
+
+  .derecho-admin {
+    grid-template-rows: 60px 140px;
   }
   
   .asesor {
-    grid-template-rows: 60px 107px;
+    grid-template-rows: 60px 110px;
   }
   
   .derecho-civil h3,
   .derecho-penal h3,
   .derecho-admin h3,
   .asesor h3 {
-    font-size: 21px;
+    font-size: 1.325rem;
   }
   
   .derecho-civil p,
   .derecho-penal p,
   .derecho-admin p,
   .asesor p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   @media screen and (max-width: 1150px) {
@@ -3301,7 +3326,7 @@ footer a:hover {
   }
 
   .servicios-content {
-    margin-top: 15px;
+    margin-top: 30px;
     width: 100%;
     height: 750px;
   }
@@ -3375,11 +3400,11 @@ footer a:hover {
   }
 
   .estudis h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .estudis h4 {
-    font-size: 18.5px;
+    font-size: 19.5px;
   }
 
   .estudis p {
@@ -3493,8 +3518,8 @@ footer a:hover {
   }
 
   .linkedin-circle {
-    width: 42.5px;
-    height: 42.5px;
+    width: 40px;
+    height: 40px;
   }
 
   .linkedin-symbol {
