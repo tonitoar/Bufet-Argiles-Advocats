@@ -1920,40 +1920,42 @@ footer a:hover {
   .derecho-admin,
   .derecho-penal,
   .asesor{
-    width: 290px;
-    height: 251px;
+    width: 275px;
+    height: 257px;
   } 
   
   .derecho-civil{
-    grid-template-rows: 55px 175px;
+    grid-template-rows: 60px 170px;
   } 
   
   .derecho-penal {
-    grid-template-rows: 55px 132px;
+    grid-template-rows: 60px 150px;
+    /* gap: 5px;  */
   }
 
   .derecho-admin {
-    grid-template-rows: 55px 175px;
+    grid-template-rows: 60px 170px;
   }
   
   .asesor {
-    grid-template-rows: 55px 132px;
+    grid-template-rows: 60px 130px;
+    /* gap: 5px;  */
   }
-
+  
   .derecho-civil h3,
   .derecho-penal h3,
   .derecho-admin h3,
   .asesor h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .derecho-civil p,
   .derecho-penal p,
   .derecho-admin p,
   .asesor p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
-
+  
   @media screen and (max-width: 700px) {
     #servicios {
         width: 100%;
@@ -1995,7 +1997,7 @@ footer a:hover {
   .derecho-admin,
   .asesor{
     width: 250px;
-    height: 266px;
+    height: 265px;
   } 
 
   .derecho-civil{
@@ -2003,15 +2005,15 @@ footer a:hover {
   } 
 
   .derecho-admin {
-    grid-template-rows: 55px 185px;
+    grid-template-rows: 55px 190px;
   }
   
   .derecho-penal {
-    grid-template-rows: 55px 146px;
+    grid-template-rows: 55px 150px;
   }
   
   .asesor {
-    grid-template-rows: 55px 146px;
+    grid-template-rows: 55px 150px;
   }
   
     .derecho-civil h3,
@@ -2112,34 +2114,35 @@ footer a:hover {
 
   @media screen and (max-width: 579px) {
     #biografia {
+      padding: 180px 0px;
       clip-path: polygon(
   0% 0%,
-  8.333% 3%,
+  8.333% 2.75%,
   16.66% 0%,
-  24.999% 3%,
+  24.999% 2.75%,
   33.332% 0%,
-  41.665% 3%,
+  41.665% 2.75%,
   49.998% 0%,
-  58.331% 3%,
+  58.331% 2.75%,
   66.664% 0%,
-  74.997% 3%,
+  74.997% 2.75%,
   83.33% 0%,
-  91.63% 3%,
+  91.63% 2.75%,
   99.96% 0%,
   100% 100%,
-  99.96% 97%,
+  99.96% 97.25%,
   91.63% 100%,
-  83.33% 97%,
+  83.33% 97.25%,
   74.997% 100%,
-  66.664% 97%,
+  66.664% 97.25%,
   58.331% 100%,
-  49.998% 97%,
+  49.998% 97.25%,
   41.665% 100%,
-  33.332% 97%,
+  33.332% 97.25%,
   24.999% 100%,
-  16.66% 97%,
+  16.66% 97.25%,
   8.333% 100%,
-  0% 97%
+  0% 97.25%
 );
 
   }
@@ -2147,37 +2150,32 @@ footer a:hover {
 
   @media screen and (max-width: 471px) {
     #biografia {
+      padding: 160px 0px;
       clip-path: polygon(
-  0% 0%,
-  8.333% 3%,
-  16.66% 0%,
-  24.999% 3%,
-  33.332% 0%,
-  41.665% 3%,
-  49.998% 0%,
-  58.331% 3%,
-  66.664% 0%,
-  74.997% 3%,
-  83.33% 0%,
-  91.63% 3%,
-  99.96% 0%,
-  100% 100%,
-  92.846% 97%,
-  85.704% 100%,
-  78.562% 97%,
-  71.42% 100%,
-  64.278% 97%,
-  57.136% 100%,
-  49.994% 97%,
-  42.852% 100%,
-  35.71% 97%,
-  28.568% 100%,
-  21.426% 97%,
-  14.284% 100%,
-  7.142% 97%,
-  0% 100%
-);
-
+        0% 0%,
+        10% 2.5%,
+        20% 0%,
+        30% 2.5%,
+        40% 0%,
+        50% 2.5%,
+        60% 0%,
+        70% 2.5%,
+        80% 0%,
+        90% 2.5%,
+        100% 0%,
+        100% 100%,
+        90% 97.5%,
+        80% 100%,
+        70% 97.5%,
+        60% 100%,
+        50% 97.5%,
+        40% 100%,
+        30% 97.5%,
+        20% 100%,
+        10% 97.5%,
+        0% 100%
+      );
+      
   }
   }
 
@@ -2220,7 +2218,7 @@ footer a:hover {
   }
 
   .contacto {
-    width: 70%;
+    width: 75%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -2230,6 +2228,7 @@ footer a:hover {
     width: 300px;
     height: 140px;
     margin-top: 10px;
+    /* padding-left: 5px; */
   }
 
   .dir-Terr,
@@ -2242,6 +2241,14 @@ footer a:hover {
     width: 75%;
     font-size: 85%;
   }
+  
+  .dir-BCN {
+    margin-left: 8px;
+  }
+
+  .dir2 {
+    margin-left: 11px;
+    }
 
   .icon-building {
     width: 22px;
@@ -2323,8 +2330,20 @@ footer a:hover {
   }
 
   .linkedin-symbol {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (max-width: 579px) {
+    .linkedin-circle {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .linkedin-symbol {
+      width: 14px;
+      height: 14px;
+    }
   }
 }
 
@@ -2336,7 +2355,6 @@ footer a:hover {
   .header {
     width: 100%;
     height: 60px;
-    background-color: green;
   }
 
   .logo {
@@ -2394,12 +2412,10 @@ footer a:hover {
   }
 
   .hero-content h1 {
-    /* font-size: 7vw; */
     font-size: clamp(4rem, 7vw, 8rem);
   }
 
   .hero-content h2 {
-    /* font-size: 3vw; */
     font-size: clamp(1.5rem, 3vw, 4rem);
   }
 
