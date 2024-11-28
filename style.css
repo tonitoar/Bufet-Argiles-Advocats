@@ -407,8 +407,8 @@ nav li:hover {
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 0.85)
+      rgba(255, 255, 255, 0.825),
+      rgba(255, 255, 255, 0.825)
     ),
     url(images/image4.webp);
   background-size: cover;
@@ -442,7 +442,7 @@ nav li:hover {
   text-align: center;
   padding: 5px;
   color: rgb(12, 53, 18);
-  font-weight: 549;
+  font-weight: 550;
 }
 
 .icon-building {
@@ -468,7 +468,7 @@ nav li:hover {
 .telef p {
   padding: 5px;
   color: rgb(12, 53, 18);
-  font-weight: 549;
+  font-weight: 550;
 }
 
 .email {
@@ -480,7 +480,7 @@ nav li:hover {
 .email p {
   padding: 5px;
   color: rgb(12, 53, 18);
-  font-weight: 549;
+  font-weight: 550;
 }
 
 .icon-telf {
@@ -2533,12 +2533,12 @@ footer a:hover {
     }
 
     .hero-content h1 {
-      font-size: clamp(3.5rem, 6.5vw, 7rem);
+      font-size: clamp(3.25rem, 6vw, 7rem);
       text-align: center;
     }
 
     .hero-content h2 {
-      font-size: clamp(1.5rem, 2.5vw, 3rem);
+      font-size: clamp(1.25rem, 2vw, 3rem);
     }
   }
 
@@ -2630,7 +2630,7 @@ footer a:hover {
   .derecho-penal,
   .asesor{
     width: 290px;
-    height: 266px;
+    height: 267px;
   } 
   
   .derecho-civil{
@@ -2800,13 +2800,21 @@ footer a:hover {
   }
 
   .contacto {
-    width: 75%;
-    height: 300px;
+    width: 80%;
+    max-width: 650px;
+    height: 325px;
+  }
+
+  @media screen and (max-width: 899px) {
+    .contacto {
+      height: 300px;
+    }
   }
 
   .contacto-info {
     width: 300px;
     height: 250px;
+    padding-left: 20px;
   }
 
   .dir-Terr,
@@ -2820,11 +2828,19 @@ footer a:hover {
     font-size: 82.5%;
   }
 
+  .dir-BCN {
+    margin-left: 8px;
+  }
+
+  .dir2 {
+    margin-left: 11px;
+    }
+
   .icon-building {
     width: 24px;
     height: auto;
-    position: relative;
-    top: 0.9px;
+    /* position: relative;
+    top: 0.9px; */
   }
 
   .contacte-tec {
@@ -2842,6 +2858,7 @@ footer a:hover {
     position: relative;
     left: 10px;
     font-size: 82.5%;
+    font-weight: bolder;
   }
 
   .icon-telf,
@@ -3120,12 +3137,13 @@ footer a:hover {
 
   .contacto {
     width: 60%;
-    height: 400px;
+    height: 350px;
   }
 
   .contacto-info {
     width: 300px;
     height: 250px;
+    padding-left: 20px;
   }
 
   .dir-Terr,
@@ -3136,14 +3154,22 @@ footer a:hover {
   .dir1,
   .dir2 {
     width: 80%;
-    font-size: 16px;
+    font-size: 15px;
   }
+
+  .dir-BCN {
+    margin-left: 8px;
+  }
+
+  .dir2 {
+    margin-left: 15px;
+    }
 
   .icon-building {
     width: 25px;
     height: auto;
-    position: relative;
-    top: 0.9px;
+    /* position: relative;
+    top: 0.9px; */
   }
 
   .contacte-tec {
@@ -3160,7 +3186,7 @@ footer a:hover {
   .email p {
     position: relative;
     left: 10px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .icon-telf,
@@ -3191,7 +3217,7 @@ footer a:hover {
   }
 
   .footer-address strong {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .address1 {
@@ -3209,17 +3235,17 @@ footer a:hover {
 
   .copyright {
     margin-top: 30px;
-    font-size: 13.5px;
+    font-size: 12px;
   }
 
   .linkedin-circle {
-    width: 42.5px;
-    height: 42.5px;
+    width: 38px;
+    height: 38px;
   }
 
   .linkedin-symbol {
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
   }
 }
 
@@ -3423,26 +3449,34 @@ footer a:hover {
   }
 
   .contacto-info {
-    width: 320px;
+    width: 340px;
     height: 400px;
+    padding-left: 5px;
   }
 
   .dir-Terr,
   .dir-BCN {
-    width: 320px;
+    width: 340px;
+  }
+
+  .dir-BCN {
+    margin-left: 10px;
   }
 
   .dir1,
   .dir2 {
     width: 250px;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 16.8px;
   }
+
+  .dir2 {
+    margin-left: 20px;
+    }
 
   .icon-building {
     position: relative;
     top: 0.9px;
-    width: 27px;
+    width: 29px;
     height: auto;
   }
 
@@ -3460,8 +3494,7 @@ footer a:hover {
   .email p {
     position: relative;
     left: 10px;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 16.8px;
   }
 
   .icon-email {
