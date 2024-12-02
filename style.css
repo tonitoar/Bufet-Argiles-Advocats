@@ -2305,16 +2305,14 @@ footer a:hover {
   }
 
   .contacto {
-    width: 75%;
+    width: 80%;
     height: 300px;
-    display: flex;
-    flex-direction: column;
   }
 
   .contacto-info {
-    width: 300px;
-    height: 140px;
-    margin-top: 10px;
+    width: 50%;
+    height: 250px;
+    padding-left: 10px;
   }
 
   .dir-Terr,
@@ -2325,7 +2323,7 @@ footer a:hover {
   .dir1,
   .dir2 {
     width: 75%;
-    font-size: 85%;
+    font-size: 0.825rem;
   }
   
   .dir-BCN {
@@ -2339,14 +2337,11 @@ footer a:hover {
   .icon-building {
     width: 22px;
     height: auto;
-    position: relative;
-    bottom: 1.5px;
   }
 
   .contacte-tec {
-    width: 300px;
-    height: 120px;
-    margin-bottom: 10px;
+    width: 50%;
+    height: 250px;
   }
 
   .telef,
@@ -2356,7 +2351,7 @@ footer a:hover {
 
   .telef p,
   .email p {
-    font-size: 85%;
+    font-size: 0.825rem;
   }
 
   .icon-telf,
@@ -2366,6 +2361,39 @@ footer a:hover {
     position: relative;
     right: 10px;
   }
+
+@media screen and (max-width: 670px) {
+  .contacto {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    max-width: 425px;
+  }
+
+    .contacto-info {
+    width: 300px;
+    height: 140px;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+
+    .dir1,
+  .dir2 {
+    width: 75%;
+    font-size: 82.5%;
+  }
+
+    .contacte-tec {
+    width: 300px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .telef p,
+  .email p {
+    font-size: 82.5%;
+  }
+}
 
   footer {
     width: 100%;
