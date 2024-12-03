@@ -1,5 +1,4 @@
 * {
-  /* border: 1px solid red;  */
   margin: 0;
   padding: 0;
 }
@@ -66,14 +65,11 @@ nav li:hover {
   background-color: rgb(6, 28, 10);
 }
 
-/*! NAVBAR MOBILE */
-
 .nav-dropdown-toggle {
   display: none;
   cursor: pointer;
   text-align: center;
 }
-/*! NAVBAR MOBILE */
 
 #inicio {
   display: flex;
@@ -614,7 +610,6 @@ footer a:hover {
     margin-right: 15px;
   }
 
-  /* NAVBAR MOBILE SHOW */
   .nav-dropdown-toggle {
     display: block;
     width: 19px;
@@ -628,7 +623,6 @@ footer a:hover {
     height: auto;
   }
 
-  /* NAVBAR DESKTOP HIDE */
   .nav-dropdown-menu {
     display: none !important;
     background-color: rgb(249, 249, 249);
@@ -1012,7 +1006,6 @@ footer a:hover {
     margin-right: 20px;
   }
 
-  /* NAVBAR MOBILE SHOW */
   .nav-dropdown-toggle {
     display: block;
     width: 20px;
@@ -1026,7 +1019,6 @@ footer a:hover {
     height: auto;
   }
 
-  /* NAVBAR DESKTOP HIDE */
   .nav-dropdown-menu {
     display: none !important;
     background-color: rgb(249, 249, 249);
@@ -1393,7 +1385,6 @@ footer a:hover {
     height: 47px;
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
   }
 
   .logo {
@@ -1412,7 +1403,6 @@ footer a:hover {
     margin-right: 20px;
   }
 
-  /* NAVBAR MOBILE SHOW */
   .nav-dropdown-toggle {
     display: block;
     width: 20px;
@@ -1426,7 +1416,6 @@ footer a:hover {
     height: auto;
   }
 
-  /* NAVBAR DESKTOP HIDE */
   .nav-dropdown-menu {
     display: none !important;
     background-color: rgb(249, 249, 249);
@@ -1815,7 +1804,6 @@ footer a:hover {
     margin-right: 30px;
   }
 
-  /* NAVBAR MOBILE SHOW */
   .nav-dropdown-toggle {
     display: block;
     width: 21px;
@@ -1829,7 +1817,6 @@ footer a:hover {
     height: auto;
   }
 
-  /* NAVBAR DESKTOP HIDE */
   .nav-dropdown-menu {
     display: none !important;
     background-color: rgb(249, 249, 249);
@@ -2017,7 +2004,6 @@ footer a:hover {
   
   .derecho-penal {
     grid-template-rows: 60px 150px;
-    /* gap: 5px;  */
   }
 
   .derecho-admin {
@@ -2026,7 +2012,6 @@ footer a:hover {
   
   .asesor {
     grid-template-rows: 60px 130px;
-    /* gap: 5px;  */
   }
   
   .derecho-civil h3,
@@ -2567,7 +2552,6 @@ footer a:hover {
       margin-right: 40px;
     }
 
-    /* NAVBAR MOBILE SHOW */
     .nav-dropdown-toggle {
       display: block;
       width: 21px;
@@ -2581,7 +2565,6 @@ footer a:hover {
       height: auto;
     }
 
-    /* NAVBAR DESKTOP HIDE */
     .nav-dropdown-menu {
       display: none !important;
       background-color: rgb(249, 249, 249);
@@ -2778,7 +2761,6 @@ footer a:hover {
   
   .asesor {
     grid-template-rows: 60px 115px;
-    /* gap: 5px;  */
   }
   
   .derecho-civil h3,
@@ -2969,8 +2951,6 @@ footer a:hover {
   .icon-building {
     width: 24px;
     height: auto;
-    /* position: relative;
-    top: 0.9px; */
   }
 
   .contacte-tec {
@@ -3050,9 +3030,6 @@ footer a:hover {
     height: 15px;
   }
 }
-
-
-
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   header {
@@ -3298,8 +3275,6 @@ footer a:hover {
   .icon-building {
     width: 25px;
     height: auto;
-    /* position: relative;
-    top: 0.9px; */
   }
 
   .contacte-tec {
@@ -3446,8 +3421,6 @@ footer a:hover {
   .hero-content h1 {
     font-size: clamp(3rem, 5.5vw, 8rem);
 
-    /* ! CLAMP is like an interval, 3rem is de minimum value, 5vw is value by preference and 6rem is the maximum value it can take;
-        ! is important when we are using font-size vw (viewport) for resposive design; ¿maybe only in the last media query min-width? */
   }
 
   .hero-content h2 {
